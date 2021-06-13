@@ -38,7 +38,7 @@ The extracted directory contains multiple files, including:
 4. Execute the specollate_train file.  
 `./specollate_search`
 
-5. Once the training is complete; the trained models can be found in the `/models` directory. Note that models are saved as `model-name-epoch_id.pt` after every epoch. Make sure to delete any unwanted model files after the training is done.
+5. Once the training is complete; the trained models can be found in the `/models` directory. Note that models are saved as `model_name-epoch_id.pt` after every epoch. Make sure to delete any unwanted model files after the training is done.
 
 ## Search
 
