@@ -13,10 +13,12 @@ Below sections separately explain setup for training and search operation. You c
 - Linux server with Ubuntu 16.04 (or later) or CentOS 8.1 (or later).
 - At least 120GBs of system memory and 10 CPU cores.
 - Cuda enabled GPU with at least 12 GBs of memory. Cuda Toolkit 10.0 (or later).
+- OpenMS tool for creating custom peptide database. (Optional)
+- Crux for FDR analysis using its percolator option.
 
 ## Training
 
-1. Download the [specollate.tar.gz](link) file and extract the contents using the following command:  
+1. Download the [specollate.tar.gz](https://drive.google.com/uc?export=download&id=1iAR4a6qQQyS2pDFMRqCd7Jaofsmxwdsp) file and extract the contents using the following command:  
 `tar -xzf specollate.tar.gz`  
 The extracted directory contains multiple files including:
     - `specollate-train`: This is the executable for training SpeCollate.
@@ -25,7 +27,7 @@ The extracted directory contains multiple files including:
     - `models (dir)`: Contains the pretrained model. New models will also be stored here.
     - `percolator (dir)`: Percolator input (.pin) files be placed here after the search is complete.
 
-2. Download the preprocessed data for training ([specollate-training-data.tar.gz](link)) and extract the contents using:  
+2. Download the preprocessed data for training ([here](https://drive.google.com/uc?export=download&id=10bZbMdc2eN_l4ToJd6ruzNX7t6wIUfHw)) and extract the contents using:  
 `tar -xzf specollate-training-data.tar.gz`
 
 3. Open the config.ini file from step 1 in your favorite text editor and set the following parameters:
@@ -36,42 +38,31 @@ The extracted directory contains multiple files including:
 4. Execute the specollate_train file.  
 `./specollate_search`
 
+5. Once the training is complete, you can find the trained models in the `/models` directory. Note that models are saved as `model-name-epoch_id.pt` after every epoch. Make sure to delete any unwanted model files after the training is done.
+
 ## Search
 
+1. Same as step 1 in the **Training** section.
+2. Download the [mgf file](https://drive.google.com/uc?export=download&id=1vMGda5UpIziyIW3dDmNSWpjeE3w6SmM8). Or you can use your own spectra files in mgf format.
+3. Download the [human peptide database](https://drive.google.com/uc?export=download&id=1pOBYkCFl66Yk1DjSIw6l9RRi7f6iSXSf). You can provide your own peptide database file created using Digestor tool provided by [OpenMS](https://www.openms.de/download/openms-binaries/).
+4. Set the following parameters in the [search] section of `config.ini` file:
+    - `model_name`: Name of the model to be used. The model should be in the `/models` directory.
+    - `mgf_dir`: Absolute path to the directory containing mgf files to be searched.
+    - `prep_dir`: Absolute path to the directory where preprocessed mgf files will be saved.
+    - `pep_dir`: Absolute path to the directory containing peptide database.
+    - `out_pin_dir`: Absolute path to directory where percolator pin files will be saved. The direcotry must exist other process will exist with an error.
+    - Set database search parameters e.g. `precursor_mass_tolerance` etc.
 
-
-You can use the [editor on GitHub](https://github.com/Usman095/SpeCollate/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+5. Once the search is complete, you can analyze the percolator files using crux percolator tool:
+```shell
+cd <out_pin_dir>
+crux percolator target.pin decoy.pin --list-of-files T --overwrite T
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+If you use our tool, please cite our work:  
+`Place holder for citation`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Usman095/SpeCollate/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+For questions, suggestions, or technical problems, contact:  
+<mtari008@fiu.edu>
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
