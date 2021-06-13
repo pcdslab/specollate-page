@@ -36,7 +36,7 @@ The extracted directory contains multiple files, including:
     - other parameters in the [ml] section: You can adjust different hyperparameters in the [ml] section, e.g., learning_rate, dropout, etc.
 
 4. Execute the specollate_train file.  
-`./specollate_search`
+`./specollate_train`
 
 5. Once the training is complete; the trained models can be found in the `/models` directory. Note that models are saved as `model_name-epoch_id.pt` after every epoch. Make sure to delete any unwanted model files after the training is done.
 
@@ -53,7 +53,12 @@ The extracted directory contains multiple files, including:
     - `out_pin_dir`: Absolute path to a directory where percolator pin files will be saved. The directory must exist; otherwise, the process will exit with an error.
     - Set database search parameters e.g. `precursor_mass_tolerance` etc.
 
-5. Once the search is complete; you can analyze the percolator files using the crux percolator tool:
+5. Execute the specollate_search file:  
+`./specollate_search`  
+If you want to use the preprocessed spectra from a previous run, use the `-p False` flag:  
+`./specollate_search -p False`
+
+6. Once the search is complete; you can analyze the percolator files using the crux percolator tool:
 ```shell
 cd <out_pin_dir>
 crux percolator target.pin decoy.pin --list-of-files T --overwrite T
