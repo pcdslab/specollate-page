@@ -68,6 +68,9 @@ crux percolator target.pin decoy.pin --list-of-files T --overwrite T
 If you use our tool, please cite our work:  
 `Place holder for citation`
 
+Learn about our lab and checkout different research projects we are working on lab web page  
+<https://saeedlab.cis.fiu.edu/>
+
 For questions, suggestions, or technical problems, contact:  
-<mtari008@fiu.edu>
+<mtari008@fiu.edu> or <fsaeed@fiu.edu>
 
