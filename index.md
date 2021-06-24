@@ -43,7 +43,7 @@ The extracted directory contains multiple files, including:
 ## Search
 
 1. Same as step 1 in the **Training** section.
-2. Download the [mgf file](https://drive.google.com/uc?export=download&id=1vMGda5UpIziyIW3dDmNSWpjeE3w6SmM8). Or you can use your own spectra files in mgf format.
+2. Download one of the [mgf files](https://drive.google.com/uc?export=download&id=1vMGda5UpIziyIW3dDmNSWpjeE3w6SmM8). Or you can use your own spectra files in mgf format.
 3. Download the [human peptide database](https://drive.google.com/uc?export=download&id=1pOBYkCFl66Yk1DjSIw6l9RRi7f6iSXSf). You can provide your own peptide database file created using the Digestor tool provided by [OpenMS](https://www.openms.de/download/openms-binaries/).
 4. Set the following parameters in the [search] section of the `config.ini` file:
     - `model_name`: Name of the model to be used. The model should be in the `/models` directory.
