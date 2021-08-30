@@ -10,22 +10,27 @@ In Fig 1, mappings of spectra and peptide embeddings from NIST Library Human-HCD
 *Fig 1: Spectra and Peptide projections of the embedded spectra and peptides. Embeddings are generated from 40 peptides and their corresponding spectra selected in increasing precursor mass value starting at 2000 Da. Adjacent mass values are chosen to show that the network is able to distinguish peptides and spectra that are close in mass. Subfigures a) and b) show how spectra with different charges map close to the peptides. Although different charge spectra are mapped close to the peptide, they still tend to be relatively farther from other charges. In subfigure a) spectra with charge 4 are closest to the peptide while in subfigure b) spectra with lower charge are closest to the peptide.*
 
 
+
 Figs 2-6 show the mappings for Proteome Tools library data. Peptides with more than 15 corresponding spectra of different precursor charge are selected.
 
 ![pt-1500-Da](https://user-images.githubusercontent.com/85772973/131393171-3fb81b3b-64a7-4844-aadf-c476bebb08c7.png)  
 *Fig 2: Proteome Tools spectra and peptides selected at 1500 Da.*
 
 
+
 ![pt-1500-Da-2](https://user-images.githubusercontent.com/85772973/131393616-0abaf64b-2240-4798-a9d5-0eb6ed653a52.png)  
 *Fig 3: Zoom in of Fig 2.*
+
 
 
 ![pt-1700-Da](https://user-images.githubusercontent.com/85772973/131393774-92268b9a-cd00-4e8a-9b2c-15107f6f36db.png)  
 *Fig 4: Proteome Tools spectra and peptides selected at 1700 Da.*
 
 
+
 ![pt-2300-Da](https://user-images.githubusercontent.com/85772973/131393860-fe37429a-a6d8-424b-b28b-3c9731da6006.png)  
 *Fig 5: Proteome Tools spectra and peptides selected at 2300 Da.*
+
 
 
 ![pt-2500-Da](https://user-images.githubusercontent.com/85772973/131393934-13afac61-2fe7-4dd3-a305-00e45965943d.png)  
