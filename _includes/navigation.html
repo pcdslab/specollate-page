@@ -64,7 +64,7 @@
 
 <!-- This finds the current page so it can be highlighted. -->
 
-{% for entry in site.data.navigation %}
+{% for entry in site.data.navigations %}
 {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
     {% if fullurl == page.url %}
         {% assign current_page = fullurl %}
