@@ -1,4 +1,4 @@
-## Welcome to the Official Site of SpeCollate
+## Welcome to the Official Site of SpeCollate checking changes
 
 SpeCollate is the first Deep Learning-based peptide-spectrum similarity network. It allows you to search a peptide database by generating embeddings for both mass spectra and peptides and then performs the search process on GPU.
 
