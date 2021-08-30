@@ -1,4 +1,4 @@
-## Training SpeCollate
+## Training SpeCollate can someone deploy this?
 
 SpeCollate is trained on tuples of six datapoints, i.e., the anchor spectrum, the positive peptide, two negative peptides, and two negative spectra. The objective function is designed to project the positive pair closer to each other than the remaining negative peptides and spectra. To avoid overfitting, the negative examples are chosen dynamically after each positive pass through the network such that they are closest to the positive pair. Details of the training process can be found in the training section of the paper.
 
