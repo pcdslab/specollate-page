@@ -9,11 +9,7 @@
       background: url('../images/bg_hr.png') repeat-x bottom;
     }
     
-    li.main2 {
-      float: left;
-    }
-    
-    li.main2 a, .dropbtn {
+    li.current a, .dropbtn {
       display: inline-block;
       background-color: #00FF00;
       color: white;
@@ -22,7 +18,7 @@
       text-decoration: none;
     }
     
-    li.main3 a, .dropbtn {
+    li.noncurrent a, .dropbtn {
       display: inline-block;
       background-color: Transparent;
       color: white;
@@ -31,7 +27,7 @@
       text-decoration: none;
     }
     
-    li.main2 a:hover, li.main3 a:hover, .dropdown:hover .dropbtn {
+    li.current a:hover, li.noncurrent a:hover, .dropdown:hover .dropbtn {
       background-color: rgb(17,128,181);
     }
 
@@ -81,10 +77,10 @@
     <ul class="main">
     {% for entry in site.data.navigation %}
         {% if entry.url == current_page %}
-            {% assign current = ' class="main2"' %}
+            {% assign current = ' class="current"' %}
         {% else %}
             <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-            {% assign current = ' class="main3"' %}
+            {% assign current = ' class="noncurrent"' %}
         {% endif %}
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
