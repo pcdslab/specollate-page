@@ -10,10 +10,19 @@
     }
     
     li.main2 {
-      float: left;
+      float: center;
     }
     
     li.main2 a, .dropbtn {
+      display: inline-block;
+      background-color: #00FF00;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li.main3 a, .dropbtn {
       display: inline-block;
       color: white;
       text-align: center;
@@ -21,8 +30,8 @@
       text-decoration: none;
     }
     
-    li.main2 a:hover, .dropdown:hover .dropbtn {
-      background-color: rgb(155, 6, 6);
+    li.main2 a:hover, li.main3 a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(17,128,181);
     }
 
     li.dropdown {
@@ -74,7 +83,7 @@
             {% assign current = ' class="main2"' %}
         {% else %}
             <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-            {% assign current = null %}
+            {% assign current = ' class="main2"' %}
         {% endif %}
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
