@@ -15,23 +15,23 @@ Figs 2-6 show the mappings for Proteome Tools library data. Peptides with more t
 
 ![pt-1500-Da](https://user-images.githubusercontent.com/85772973/131393171-3fb81b3b-64a7-4844-aadf-c476bebb08c7.png)  
 *Fig 2: Proteome Tools spectra and peptides selected at 1500 Da.*
-
-
-
+  
+  
+  
 ![pt-1500-Da-2](https://user-images.githubusercontent.com/85772973/131393616-0abaf64b-2240-4798-a9d5-0eb6ed653a52.png)  
 *Fig 3: Zoom in of Fig 2.*
-
-
-
+  
+  
+  
 ![pt-1700-Da](https://user-images.githubusercontent.com/85772973/131393774-92268b9a-cd00-4e8a-9b2c-15107f6f36db.png)  
 *Fig 4: Proteome Tools spectra and peptides selected at 1700 Da.*
-
-
-
+  
+  
+  
 ![pt-2300-Da](https://user-images.githubusercontent.com/85772973/131393860-fe37429a-a6d8-424b-b28b-3c9731da6006.png)  
 *Fig 5: Proteome Tools spectra and peptides selected at 2300 Da.*
-
-
-
+  
+  
+  
 ![pt-2500-Da](https://user-images.githubusercontent.com/85772973/131393934-13afac61-2fe7-4dd3-a305-00e45965943d.png)  
 *Fig 6: Proteome Tools spectra and peptides selected at 2500 Da.*
