@@ -3,4 +3,3 @@ description: A deep cross-modal similarity network for mass spectrometry based p
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
-baseurl: /deepspecs.github.io
