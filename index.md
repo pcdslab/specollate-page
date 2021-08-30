@@ -1,5 +1,3 @@
-{% include navigation.html}
-
 ## Welcome to the Official Site of SpeCollate
 
 SpeCollate is the first Deep Learning-based peptide database search tool. It allows you to search a peptide database by generating embeddings for both mass spectra and peptides and then performs the search process on GPU.
