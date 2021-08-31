@@ -8,7 +8,7 @@ Two different executables are included in the downloadable specollate.tar.gz fil
 
 The below sections separately explain the setup for training and search operation. You can skip the training section if you only intend to use SpeCollate for database search.
 
-## Prerequisites
+## Prerequisites uikji
 
 - Linux server with Ubuntu 16.04 (or later) or CentOS 8.1 (or later).
 - At least 120GBs of system memory and 10 CPU cores.
