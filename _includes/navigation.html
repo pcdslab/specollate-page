@@ -82,7 +82,7 @@
             {% assign current = ' class="current"' %}
         {% else %}
             <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-            {% assign current = ' class="current"' %}
+            {% assign current = ' class="noncurrent "' %}
         {% endif %}
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
