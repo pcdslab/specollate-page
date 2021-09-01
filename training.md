@@ -6,7 +6,7 @@ SpeCollate consists of two branches SSN and PSN. Spectra are first encoded into 
 
 After the forward pass, sextuplets are generated using Online Hardest Sextuplet Mining where closest negative peptides and spectra to the anchor spectrum and positive peptide are chosen as the negative examples.
 
-The training process is visualized in Fig 1. below:
+The training process is visualized in the figure below:
 
 ![training](images/training.png)
 
