@@ -1,3 +1,7 @@
+## Training SpeCollate
+
+SpeCollate is training using the [SNAP-Loss](index.md) function
+
 SpeCollate is available as a standalone executable that can be downloaded and run on a Linux server with a Cuda-enabled GPU.
 
 Two different executables are included in the downloadable specollate.tar.gz file; 1) specollate_train for retraining a model and 2) specollate_search for performing database search using a trained model. A pre-trained model is provided within the download file.
