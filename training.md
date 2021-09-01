@@ -6,14 +6,14 @@ Here we will show the UMAP projections of the embedded spectra and peptides gene
 
 In Fig 1, mappings of spectra and peptide embeddings from NIST Library Human-HCD-Phospho are shown at mass 2000 Da. Peptides are shown in red points, and the clustering of the blue points around the peptide (red point) represents the spectra belonging to that peptide. 
 
-![human-hcd-2000-Da](_images/human-hcd-2000-Da.png)  
+![human-hcd-2000-Da](https://github.com/deepspecs/deepspecs.github.io/blob/main/_images/human-hcd-2000-Da.png)  
 *Fig 1: Spectra and Peptide projections of the embedded spectra and peptides. Embeddings are generated from 40 peptides and their corresponding spectra selected in increasing precursor mass value starting at 2000 Da. Adjacent mass values are chosen to show that the network is able to distinguish peptides and spectra that are close in mass. Subfigures a) and b) show how spectra with different charges map close to the peptides. Although different charge spectra are mapped close to the peptide, they still tend to be relatively farther from other charges. In subfigure a) spectra with charge 4 are closest to the peptide while in subfigure b) spectra with lower charge are closest to the peptide.*
 
 
 
 Figs 2-6 show the mappings for Proteome Tools library data. Peptides with more than 15 corresponding spectra of different precursor charge are selected.
 
-![pt-1500-Da](https://github.com/deepspecs/deepspecs.github.io/blob/main/_images/human-hcd-2000-Da.png)  
+![pt-1500-Da](./_images/pt-1500-Da.png)  
 *Fig 2: Proteome Tools spectra and peptides selected at 1500 Da.*
   
   
