@@ -13,7 +13,7 @@ In Fig 1, mappings of spectra and peptide embeddings from NIST Library Human-HCD
 
 Figs 2-6 show the mappings for Proteome Tools library data. Peptides with more than 15 corresponding spectra of different precursor charge are selected.
 
-![pt-1500-Da](_images/pt-1500-Da.png)  
+![pt-1500-Da](https://github.com/deepspecs/deepspecs.github.io/blob/main/_images/human-hcd-2000-Da.png)  
 *Fig 2: Proteome Tools spectra and peptides selected at 1500 Da.*
   
   
