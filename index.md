@@ -1,6 +1,6 @@
-## Welcome to the Official Site of SpeCollate update?
+## Welcome to the Official Site of SpeCollate
 
-SpeCollate is the first Deep Learning-based peptide-spectrum similarity network. It allows you to search a peptide database by generating embeddings for both mass spectra and peptides and then performs the search process on GPU.
+SpeCollate is the first Deep Learning-based peptide-spectrum similarity network. It allows searching a peptide database by generating embeddings for both mass spectra and database peptides. Nearest neighbor search is performed in the embedding space to find the k (usually k=5) nearest peptide for each spectrum. and then performs the search process on GPU.
 
 SpeCollate is available as a standalone executable that can be downloaded and run on a Linux server with a Cuda-enabled GPU.
 
@@ -8,9 +8,9 @@ Two different executables are included in the downloadable specollate.tar.gz fil
 
 The below sections separately explain the setup for training and search operation. You can skip the training section if you only intend to use SpeCollate for database search.
 
-## Prerequisites uikji
+## Prerequisites
 
-- Linux server with Ubuntu 16.04 (or later) or CentOS 8.1 (or later).
+- A Computer with Ubuntu 16.04 (or later) or CentOS 8.1 (or later).
 - At least 120GBs of system memory and 10 CPU cores.
 - Cuda enabled GPU with at least 12 GBs of memory. Cuda Toolkit 10.0 (or later).
 - OpenMS tool for creating custom peptide database. (Optional)
