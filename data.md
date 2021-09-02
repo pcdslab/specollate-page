@@ -3,8 +3,8 @@
 We use NIST and MassIVE spectral libraries to train SpeCollate. The spectral libraries are preprocessed to generate two sets of data, i.e., spectra and their corresponding peptides. The preprocessed training data can be downloaded from [here](https://drive.google.com/uc?export=download&id=10bZbMdc2eN_l4ToJd6ruzNX7t6wIUfHw). We obtained *~4.8* million spectra with known peptide sources containing *~.5* million spectra from modified peptides. Nine different types of modifications found in the training dataset are used for training the network. These modifications and their corresponding character values are given in table 1. Other details of the training dataset are given in table 2.
 
 *Table 1: Modifications used in the training data and the corresponding character assignment for represention within peptide sequence.*  
-| Modifications   | Value |
 
+| Modifications   | Value |
 | --------------- | ----- |
 | Phosphop        | p     |
 | Oxidation       | o     |
@@ -19,6 +19,7 @@ We use NIST and MassIVE spectral libraries to train SpeCollate. The spectral lib
 <br/>
 
 *Table 2: Characteristics of training dataset used. Data was acquired from online repositories including NIST peptide library, MassIVE. The post translation modifications in the dataset are CAM, Phosphorylation, Oxidation, and N-terminal Acetylation.*  
+
 | Parameters         | Values |
 | ------------------ | ------ |
 | Training Samples   | 4.8M   |
