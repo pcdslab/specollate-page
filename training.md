@@ -12,6 +12,17 @@ The training process is visualized in the figure below:
 
 Once, the sextuplets are genrated, the loss is calculated using the SNAP-Loss function and the network paramenters are updated by back propagation.
 
+Tuned hyperparameters are given in table 1 below and the ranges for which their value was tuned for:
+
+| Hyperparameter | Value  | Values Tested                                        |
+| -------------- | ------ | ---------------------------------------------------- |
+| Learning Rate  | 0.0001 | 0.00001, 0.00005, 0.0001, 0.0005, 0.001, 0.005, 0.01 |
+| Weight Decay   | 0.0001 | 1xe^-6, 1xe^-5, 1xe^-4, 1xe^-3                       |
+| Margin         | 0.2    | 0.1, 0.2, 0.3, 0.4                                   |
+| Embedding Dim  | 256    | 32, 64, 128, 256, 512, 1028, 2048                    |
+| FC Layers      | 2      | 1, 2, 3                                              |
+| BiLSTM Layers  | 2      | 1, 2, 3, 4                                           |
+
 SpeCollate is available as a standalone executable that can be downloaded and run on a Linux server with a Cuda-enabled GPU.
 
 Two different executables are included in the downloadable specollate.tar.gz file; 1) specollate_train for retraining a model and 2) specollate_search for performing database search using a trained model. A pre-trained model is provided within the download file.
