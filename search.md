@@ -75,12 +75,3 @@ Figs 2-6 show the mappings for Proteome Tools library data. Peptides with more t
 ![pt-2500-Da](images/pt-2500-Da.png)  
 *Fig 6: Proteome Tools spectra and peptides selected at 2500 Da.*
 
-
-If you use our tool, please cite our work:  
-`Place holder for citation`
-
-Learn about our lab and check out different research projects we are working on, on our lab website:  
-<https://saeedlab.cis.fiu.edu/>
-
-For questions, suggestions, or technical problems, contact:  
-<mtari008@fiu.edu> or <fsaeed@fiu.edu>
