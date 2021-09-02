@@ -24,7 +24,7 @@ To calculate the loss value, we first define a few variables that are precompute
 
 ![SpeCollate Architecture](./images/equation1.png)
 
-Then the SNAP-loss is calculated for a batch of size $b$ as follows:
+Then the SNAP-loss is calculated for a batch of size b as follows:
 
 ![SpeCollate Architecture](./images/equation2.png)
 
