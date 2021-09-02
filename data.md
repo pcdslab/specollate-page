@@ -4,6 +4,7 @@ We use NIST and MassIVE spectral libraries to train SpeCollate. The spectral lib
 
 *Table 1: Modifications used in the training data and the corresponding character assignment for represention within peptide sequence.*  
 | Modifications   | Value |
+
 | --------------- | ----- |
 | Phosphop        | p     |
 | Oxidation       | o     |
