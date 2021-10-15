@@ -1,4 +1,4 @@
-title: SpeCollate
+title: SpeCollate-2
 description: A deep cross-modal similarity network for mass spectrometry based peptide deductions.
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
